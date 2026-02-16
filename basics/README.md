@@ -1,1 +1,1 @@
-Scripts for learning basic shell commands
+Projet sur les commandes de base du Shell Bash.
