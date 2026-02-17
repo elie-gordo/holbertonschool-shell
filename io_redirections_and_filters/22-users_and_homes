@@ -1,0 +1,17 @@
+#!/bin/bash
+cut -d ":" -f 1,6 /etc/passwd | sort
+
+# Rendre le script exécutable
+chmod u+x 22-users_and_homes
+
+# Tester le script
+./22-users_and_homes
+git add 22-users_and_homes
+git commit -m "Add exercise 22: users and their home directories"
+git push
+
+
+
+cat << 'EOF' > 22-users_and_homes
+#!/bin/bash
+cut -d ":" -f 1,6 /etc/passwd | sort
